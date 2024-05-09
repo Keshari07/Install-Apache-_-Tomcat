@@ -1,0 +1,70 @@
+https://youtu.be/7i0wj2QYo4M?si=puBj_a2sDfnX3niC
+https://youtu.be/m_9QNRHnL0E?si=eHAmT4NM_gfYphWd
+https://tomcat.apache.org/download-90.cgi
+
+ 
+ ===================       https://tomcat.apache.org/         =================================================
+ 
+ 
+sudo apt upgrade 
+    8  sudo apt upgrade -y
+    9  sudo apt install wget
+   10  sudo apt install nano
+   11  sudo apt install vim
+   12  sudo apt-get install default-jdk
+   13  java --version
+   14  sudo apt install wget
+   15  sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.89/bin/apache-tomcat-9.0.89.tar.gz
+   16  sudo tar -xzf apache-tomcat-9.0.89.tar.gz 
+   17  ls
+   18  sudo mkdir /opt/tomcat
+   19  sudo mv apache-tomcat-9.0.89/* /opt/tomcat/
+   20  cd /opt/tomcat/
+   21  ls
+   22  cd conf/
+
+
+
+root code and Command
+
+root@keshri:/opt/tomcat/bin# history 
+    1  cd /opt/tomcat/conf/
+    2  ls
+    3  vim tomcat-users.xml 
+    4  cd ../bin/
+    5  ls
+    6  ./startup.sh 
+    7  cd ../conf/
+    8  ls
+    9  vim tomcat-users.xml 
+   10  cd ../bin/
+   11  ./startup.sh 
+   12  ifconfig
+   13  apt install net-tools
+   14  ifconfig
+   15  cd ..
+   16  cd conf/
+   17  ls
+   18  vim tomcat-users.xml 
+   19  cd ../bin/
+   20  ls
+   21  ./startup.sh 
+   22  cd ..
+   23  cd conf/
+   24  ls
+   25  vim tomcat-users.xml 
+   26  cd ../bin/
+   27  ./shutdown.sh 
+   28  ./startup.sh 
+--------------------------------------------
+
+vim tomcat-users.xml 
+
+<role rolename="manager-gui"/>
+<user username="tomcat" password="1234" roles="manager-gui"/>
+    
+</tomcat-users>
+
+
+
+
